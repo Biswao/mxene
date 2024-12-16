@@ -1,6 +1,6 @@
 .backgroundimg{
-    background-image: url('../../../../public/assets/foot2.jpg');
-    filter:grayscale(90%);
+    background-image: url('../../../../public/assets/footerImg.jpg');
+    filter:grayscale(40%);
     /* background-color: black; */
     /* background-size: cover; */
     background-repeat: no-repeat;

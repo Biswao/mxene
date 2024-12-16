@@ -1,4 +1,4 @@
-import img from '../../../../public/assets/img3.jpg'
+import img from '../../../../public/assets/img2.jpg'
 import './CoreValuesSection.css'
 
 const CoreValuesSection = () => {
@@ -10,12 +10,16 @@ const CoreValuesSection = () => {
         <div className='row'>
           
           <div className='column col-lg-5 my-auto'>
-          <h3 className="font-bold pt-4">Core Values</h3>
-            <ul className="mt-4">
-              <li><strong>Innovation:</strong><br /> Cutting-edge materials with real-world impact.</li>< br />
-              <li><strong>Affordability:</strong><br />  Patented technology that reduces costs, making high-quality materials accessible.</li> <br />
-              <li><strong>Sustainability:</strong><br />  Responsible practices that support a cleaner, greener future.</li> < br />
-            </ul>
+          <h3 className="font-bold pt-4">Why Explore with MXeneTech</h3>
+            {/* <ul className="mt-4"> */}
+            <div className='mt-4'>
+              <strong> ✅ Research-Driven:</strong><br /> We focus on rigorous exploration and testing.< br />
+              <strong>✅ Potential for Innovation: </strong><br /> Our work seeks to uncover new possibilities.<br />
+              <strong>✅ Collaborative Spirit:</strong><br /> We welcome partnerships to advance discovery.< br />
+              <strong>✅ Sustainability-Oriented:</strong><br /> Our research considers environmental impact.< br />
+              <strong>✅ Experienced Team:</strong><br /> Our scientists and researchers bring deep expertise to every project.< br />
+              </div>
+            {/* </ul> */}
           </div>
           <div className='column col-lg-7 py-4'>
             <img
