@@ -14,17 +14,20 @@ const AdvantageCard = ({ title, description,image }) => (
   
   const AdvantagesSection = () => {
     const advantages = [
-      { title: "Patented Cost-Effective Production", description: "Our unique production technology ensures premium quality at an affordable price.", image:img1 },
-      { title: "High-Performance Materials", description: "Engineered for superior conductivity, stability, and durability.",image:img2 },
-      { title: "Sustainable Solutions", description: "Eco-friendly production aligns with global sustainability goals, minimizing waste and energy consumption.",image:img3 },
-      { title: "Customization", description: "We work closely with clients to deliver tailored solutions that meet industry-specific demands.",image:img4 },
+      { title: "Battery Technology", description: "Investigating the Future of Energy Storage.", image:img1 },
+      { title: "EMI Shielding", description: "Exploring Advanced Shielding Solutions.",image:img2 },
+      { title: "Water Desalination", description: "Studying MXene Membranes for Water Purification.",image:img3 },
+      { title: "Custom R&D", description: "Collaborative Research for Unique Challenges.",image:img4 },
     ];
     return (
       <div className="container py-12">
-        <h3 className="text-center text-3xl font-bold mb-8">Advantages of ReseaproLabs Products</h3>
-        <p>ReseaproLabs’ commitment to innovation, quality, and affordability makes us a leader in advanced materials. 
-          Our patented production methods allow us to offer high-purity MXene and MaxPhase materials at a reduced cost, 
-          making groundbreaking technology accessible to a wide range of industries.</p>
+        <h3 className="text-center text-3xl font-bold mb-8">Key Research Areas</h3>
+       <center> <p className='mb-5'>Our research is focused on exploring how these materials might solve real-world challenges. 
+          While we are in the early stages of investigation, our findings so far are promising. 
+          We are committed to working alongside industry partners, researchers, and innovators to uncover applications 
+          that could drive progress.
+          Join us as we explore new frontiers and pursue answers that may lead to tomorrow’s breakthroughs.
+ </p></center>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
           {advantages.map((adv, index) => (
             <AdvantageCard key={index} title={adv.title} description={adv.description} image={adv.image} />
