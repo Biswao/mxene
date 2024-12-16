@@ -13,12 +13,16 @@ const WhyChooseUsSection = () => {
               </video>
             </div>
             <div className='column col-lg-5 my-auto'>
-              <h2 className="font-bold mt-4">Why Choose Us</h2><br />
-              <h4 className="font-bold">Innovation:</h4>
+              <h2 className="font-bold mt-4">Our Values</h2><br />
+              {/* <h4 className="font-bold">Innovation:</h4> */}
               <p className="mt-4">
-                Join us as we shape tomorrow’s technology landscape. With our commitment to innovation and sustainability,
-                we empower industries worldwide with materials designed to meet today’s demands and drive tomorrow’s
-                breakthroughs.< br />
+                
+           	•         	<strong>Curiosity:</strong> A passion for discovery and learning.<br /><br />
+           	•         	<strong>Integrity:</strong> Commitment to ethical, transparent research.<br /><br />
+           	•         	<strong>Collaboration:</strong> Building strong partnerships for shared success.<br /><br />
+           	•         <strong>	Sustainability:</strong> Considering long-term environmental impact.<br /><br />
+           	•         	<strong>Adaptability:</strong> Staying open to new directions and ideas.<br /><br />
+< br />
               </p>
             </div>
           </div>
