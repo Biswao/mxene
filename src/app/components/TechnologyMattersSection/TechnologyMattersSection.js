@@ -1,35 +1,67 @@
-import imga from '../../../../public/assets/adv1.png'
-import imgb from '../../../../public/assets/adv12.png'
-import imgc from '../../../../public/assets/adv13.png'
+import imga from '../../../../public/assets/circuit.png'
+import imgb from '../../../../public/assets/airplane.png'
+import imgc from '../../../../public/assets/blood-pressure-meter.png'
+
+
+
 
 const TechnologyMattersSection = () => {
-  const items = [
+  const researchAreas = [
     {
-      title: "Cost-Effective High Purity", description: "Achieves high purity levels at a fraction of traditional costs.",
-      image: imga.src
+      title: "Electronics Protection",
+      image: imga.src, // Replace with your image path
+      description: "We are exploring how MXenes could help shield:",
+      subPoints: [
+        "Consumer Electronics: Devices like smartphones, tablets, and computers.",
+        "Industrial Equipment: Machinery and systems sensitive to electromagnetic interference.",
+      ],
     },
     {
-      title: "Enhanced Stability", description: " Ideal for demanding applications like energy storage and water desalination.",
-      image: imgb.src
+      title: "Defense and Aerospace",
+      image: imgb.src, // Replace with your image path
+      description: "Our research focuses on potential applications for:",
+      subPoints: [
+        "Military Communications: Securing communication channels from interference.",
+        "Aerospace Systems: Lightweight shielding for aircraft and satellites.",
+      ],
     },
     {
-      title: "Scalability", description: "Designed for large-scale production to meet industry needs.",
-      image: imgc.src
+      title: "Medical Devices",
+      image: imgc.src, // Replace with your image path
+      description: "We are investigating how MXenes might protect:",
+      subPoints: [
+        "Diagnostic Equipment: Ensuring accurate results in imaging and testing.",
+        "Implantable Devices: Keeping pacemakers and other devices safe from interference.",
+      ],
     },
   ];
-  return (
 
+  return (
     <div className="container py-12">
-      <h3 className="text-center text-3xl font-bold mb-8 text-center">Why Our Patented Technology Matters</h3>
-      <p className=' text-center'>Our patented technology combines cost efficiency with exceptional quality, allowing us to serve
-        diverse industries while reducing environmental impact.</p>
-      <div style={{display:'flex',justifyContent:'space-around',gap:'10'}}>
-        {items.map((item, index) => (
-          <div key={index} className="bg-gray-100 p-6 rounded-lg shadow-md">
-            <img src={item.image} alt='icons' style={{ backgroundColor: 'white', padding: '10px', borderRadius: '50%' }}
-              className='shadow-md' />
-            <h3 className="font-bold">{item.title}</h3>
-            <p className="mt-2">{item.description}</p>
+      <h3 className="text-center text-3xl font-bold mb-8">Research Areas</h3>
+
+      <div className="grid gap-8 grid-cols-1 md:grid-cols-3">
+        {researchAreas.map((area, index) => (
+          <div
+            key={index}
+            className="bg-gray-100 p-6 rounded-lg shadow-md text-center"
+          >
+            <div className="mb-4">
+              <img
+                src={area.image}
+                alt={`${area.title} Image`}
+                className="mx-auto w-16 h-16 object-contain"
+              />
+            </div>
+            <h3 className="font-bold text-xl mb-2">{area.title}</h3>
+            <p className="text-gray-700">{area.description}</p>
+            <ul className="mt-4 list-disc list-inside">
+              {area.subPoints.map((point, i) => (
+                <li key={i} className="text-gray-600">
+                  {point}
+                </li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>
