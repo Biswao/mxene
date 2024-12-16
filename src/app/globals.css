@@ -19,3 +19,15 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.text-stroke {
+  color: white; /* Make the text itself transparent */
+  -webkit-background-clip: text; /* Clip the background to the text (works in most modern browsers) */
+  background-image: linear-gradient(to right, red, blue); /* Create a gradient stroke */
+  font-weight: bold; /* Optional: Make the stroke effect stand out */
+  text-shadow:
+      2px 2px 0 #05002c,  /* Black shadow on the right and bottom */
+      -2px -2px 0 #05002c, /* Black shadow on the left and top */
+      2px -2px 0 #05002c,  /* Black shadow on the right and top */
+      -2px 2px 0 #05002c;  /* Black shadow on the left and bottom */
+}
