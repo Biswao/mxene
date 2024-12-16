@@ -1,6 +1,23 @@
 .bgVideo{
     /* display: none; */
     background-color: rgb(18, 0, 43);
-}          
+}        
+
+@media(max-width:991px){
+    video{
+        height: 100% !important;
+    }
+.FirstLiner{
+    font-size: 1em !important;
+}
+
+.secondLiner{
+    font-size: 0.7em !important;
+    line-height: 15px;
+}
+
+}
+
+
 
 

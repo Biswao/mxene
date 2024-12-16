@@ -14,8 +14,8 @@ const HeroSection = () => {
   <div className="container position-absolute top-50 start-50 translate-middle text-center text-white" data-aos="fade-up" data-aos-delay="500">
     {/* <h1 style={{ fontSize: '6rem' }} className='text-stroke'>MXene</h1> */}
     <center><img src={logoPng.src} style={{height:'20vh',marginBottom:'2rem'}} alt="MxeneTech Logo"/></center>
-    <h2 style={{ fontSize: '2rem' }} className='text-stroke'>Empowering Tomorrow with Patented Advanced Materials</h2><br />
-    <h4 className='text-stroke' style={{fontWeight:'normal'}}>At ReseaproLabs, we are pioneering the future with patented technology 
+    <h2  style={{ fontSize: '2rem' }} className='text-stroke FirstLiner'>Empowering Tomorrow with Patented Advanced Materials</h2><br />
+    <h4 className='text-stroke secondLiner' style={{fontWeight:'normal'}}>At ReseaproLabs, we are pioneering the future with patented technology 
       for high-performance materials like MaxPhase and MXene. Our unique production methods enable us to deliver high-purity materials 
       at a fraction of traditional costs, making advanced solutions accessible to industries in energy storage, EMI shielding, and 
       water desalination.</h4>
