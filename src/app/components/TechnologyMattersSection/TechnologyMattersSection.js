@@ -1,9 +1,6 @@
-import imga from '../../../../public/assets/circuit.png'
-import imgb from '../../../../public/assets/airplane.png'
-import imgc from '../../../../public/assets/blood-pressure-meter.png'
-
-
-
+import imga from "../../../../public/assets/circuit.png";
+import imgb from "../../../../public/assets/airplane.png";
+import imgc from "../../../../public/assets/blood-pressure-meter.png";
 
 const TechnologyMattersSection = () => {
   const researchAreas = [
@@ -13,7 +10,7 @@ const TechnologyMattersSection = () => {
       description: "We are exploring how MXenes could help shield:",
       subPoints: [
         "Consumer Electronics: Devices like smartphones, tablets, and computers.",
-        "Industrial Equipment: Machinery and systems sensitive to electromagnetic interference.",
+        "Industrial Equipment: Machinery and systems sensitive to electromagnetic.",
       ],
     },
     {
@@ -40,28 +37,27 @@ const TechnologyMattersSection = () => {
     <div className="container py-12">
       <h3 className="text-center text-3xl font-bold mb-8">Research Areas</h3>
 
-      <div className="grid gap-8 grid-cols-1 md:grid-cols-3">
+      <div className="row">
         {researchAreas.map((area, index) => (
-          <div
-            key={index}
-            className="bg-gray-100 p-6 rounded-lg shadow-md text-center"
-          >
-            <div className="mb-4">
-              <img
-                src={area.image}
-                alt={`${area.title} Image`}
-                className="mx-auto w-16 h-16 object-contain"
-              />
+          <div key={index} className="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div className="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+              <div className="mb-4">
+                <img
+                  src={area.image}
+                  alt={`${area.title} Image`}
+                  className="mx-auto w-16 h-16 object-contain"
+                />
+              </div>
+              <h3 className="font-bold text-xl mb-2">{area.title}</h3>
+              <p className="text-gray-700">{area.description}</p>
+              <ul className="mt-4 list-disc list-inside">
+                {area.subPoints.map((point, i) => (
+                  <li key={i} className="text-gray-600">
+                    {point}
+                  </li>
+                ))}
+              </ul>
             </div>
-            <h3 className="font-bold text-xl mb-2">{area.title}</h3>
-            <p className="text-gray-700">{area.description}</p>
-            <ul className="mt-4 list-disc list-inside">
-              {area.subPoints.map((point, i) => (
-                <li key={i} className="text-gray-600">
-                  {point}
-                </li>
-              ))}
-            </ul>
           </div>
         ))}
       </div>

@@ -58,7 +58,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-lg-3 mb-4" style={{display:"flex" , alignItems:"center" , }}>
+          <div className="col-lg-3 mb-4" style={{display:"flex" , alignItems:"center" , flexDirection:"column" }}>
             <h4 className="text-xl font-bold mb-4">Follow Us</h4>
             <div className="d-flex gap-2">
               <Link href="https://www.facebook.com/">
