@@ -1,73 +1,106 @@
-import React from 'react'
-import img from '../../../../public/assets/img2.jpg'
+import React from "react";
 
-function page() {
+function ContactPage() {
   return (
-       <>
-       <div className='corebg'>
-         <div className='container pt-12'>
-           <div className='row'>
-             
-             <div className='column col-lg-5 my-auto'>
-             <h3 className="font-bold pt-4">About Us</h3>
-             <h6 className="font-bold pt-4">  Exploring the Boundless Potential of 2D Materials.</h6>
-             <h4 className="font-bold pt-4">Who We Are</h4>
-             <p>At MXeneTech by Reseapro Labs, we are driven by curiosity and the desire to understand advanced 2D materials. Our focus is on MXenes, MAX Phases, and Graphene—materials with the potential to address significant challenges in energy, electronics, and water treatment.
-    
-    We are a team of researchers, scientists, and engineers who are passionate about discovery. By exploring these materials, we aim to generate insights that could lead to real-world applications. Our work is about asking questions, testing ideas, and collaborating with others who share our enthusiasm for innovation.
-    </p>
-               {/* </ul> */}
-             </div>
-             <div className='column col-lg-7 py-4 pt-12'>
-               <img
-                 src={img.src}
-                 alt="Molecular structure"
-                 style={{borderRadius:'10px'}}
-               />
-             </div>
-           </div>
-         </div>
-         <div className='container pt-12'>
-           <div className='row'>
-           <div className='column col-lg-7 py-4 pt-12'>
-               <img
-                 src={img.src}
-                 alt="Molecular structure"
-                 style={{borderRadius:'10px'}}
-               />
-             </div>
-             <div className='column col-lg-5 my-auto'>
-             
-             <h4 className="font-bold pt-4">Our Mission</h4>
-             <p>Our mission is to conduct exploratory research into 2D materials and understand their potential applications. We strive to bridge the gap between fundamental science and practical solutions, offering a foundation for future innovations that could benefit society. </p>
-               {/* </ul> */}
-             </div>
-            
-           </div>
-         </div>
-   
-         </div>
-         <div className='container pt-12'>
-           <div className='row'>
-             
-             <div className='column col-lg-5 my-auto'>
-             {/* <h3 className="font-bold pt-4">About Us</h3>
-             <h6 className="font-bold pt-4">  Exploring the Boundless Potential of 2D Materials.</h6> */}
-             <h4 className="font-bold pt-4">Our Vision</h4>
-             <p>We envision a future where advanced materials open new possibilities for industries. Our goal is to contribute knowledge and insights that help pave the way for sustainable, efficient, and innovative technologies.</p>
-               {/* </ul> */}
-             </div>
-             <div className='column col-lg-7 py-4 pt-12'>
-               <img
-                 src={img.src}
-                 alt="Molecular structure"
-                 style={{borderRadius:'10px'}}
-               />
-             </div>
-           </div>
-         </div>
-       </>
-  )
+    <div>
+      {/* Contact Us Section */}
+      <section className="contact-section" style={{ backgroundColor: "#f9f9f9" }}>
+        <div className="container text-center" style={{paddingTop:"80px" , paddingBottom:'60px'}}>
+          <h2 className="contact-title mb-4" style={{ fontWeight: "700", fontSize: "2.5rem" }}>
+            Contact Us
+          </h2>
+          <p className="contact-description mb-5" style={{ fontSize: "1.1rem", lineHeight: "1.6" }}>
+            Have questions about our services, submissions, or payment procedure? 
+            We’d love to hear from you! Reach out via email or leave a message below. 
+            Our team is here to assist you.
+          </p>
+
+          {/* Contact Details & Form */}
+          <div className="row justify-content-center align-items-start">
+            {/* Contact Info */}
+            <div className="col-lg-5 col-md-6 mb-4 mb-md-0">
+              <div className="contact-info text-start p-4 bg-white rounded shadow-sm">
+                <h5 className="mb-3" style={{ fontWeight: "600" }}>Get in Touch</h5>
+                <p>
+                  <i className="fa fa-telegram me-2" style={{ color: "#0088cc" }}></i>
+                  Telegram: <strong>+91-904-000-5445</strong>
+                </p>
+                <p>
+                  <i className="fa fa-whatsapp me-2" style={{ color: "#25D366" }}></i>
+                  WhatsApp: 
+                  <br /> <strong>+1 (646)916-3476 (USA)</strong>
+                  <br /> <strong>+91-904-002-3003 (India)</strong>
+                  <br /> <strong>+91-923-730-4004 (India)</strong>
+                </p>
+                <p>
+                  <i className="fa fa-envelope me-2" style={{ color: "#ea4335" }}></i>
+                  Email: <strong>support@manuscriptedit.com</strong>
+                </p>
+              </div>
+            </div>
+
+            {/* Contact Form */}
+            <div className="col-lg-5 col-md-6">
+              <div className="form-container p-4 bg-white rounded shadow-sm">
+                <h5 className="text-center mb-4" style={{ fontWeight: "600" }}>
+                  Get a Response Within 24 Hours
+                </h5>
+                <form>
+                  <div className="form-group mb-3">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Your Full Name"
+                      style={{ borderRadius: "8px" }}
+                    />
+                  </div>
+                  <div className="form-group mb-3">
+                    <select className="form-control" style={{ borderRadius: "8px" }}>
+                      <option>Select Service</option>
+                      <option>Editing</option>
+                      <option>Proofreading</option>
+                      <option>Formatting</option>
+                    </select>
+                  </div>
+                  <div className="form-group mb-3">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Phone Number"
+                      style={{ borderRadius: "8px" }}
+                    />
+                  </div>
+                  <div className="form-group mb-3">
+                    <input
+                      type="email"
+                      className="form-control"
+                      placeholder="Your Email"
+                      style={{ borderRadius: "8px" }}
+                    />
+                  </div>
+                  <div className="form-group mb-4">
+                    <textarea
+                      className="form-control"
+                      placeholder="Your Message"
+                      rows="4"
+                      style={{ borderRadius: "8px" }}
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    className="btn btn-primary w-100"
+                    style={{ borderRadius: "8px", fontWeight: "600" }}
+                  >
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 }
 
-export default page
+export default ContactPage;
