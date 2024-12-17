@@ -31,3 +31,53 @@ body {
       2px -2px 0 #05002c,  /* Black shadow on the right and top */
       -2px 2px 0 #05002c;  /* Black shadow on the left and bottom */
 }
+
+
+.contact-section {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.contact-description {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #555;
+}
+
+.form-container {
+  background-color: #e5e6e8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-control {
+  border: 1px solid #ced4da;
+}
+
+.btn-danger {
+  background-color: #1f2937 !important;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-danger:hover {
+  background-color: #39485d;
+}
+
+.btn-primary{
+  background-color: #1f2937;
+}
