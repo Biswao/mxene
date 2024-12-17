@@ -31,3 +31,9 @@ body {
       2px -2px 0 #05002c,  /* Black shadow on the right and top */
       -2px 2px 0 #05002c;  /* Black shadow on the left and bottom */
 }
+
+.corebg{
+  background-color: #2F3034;
+  width: 100%;
+color:white;
+}

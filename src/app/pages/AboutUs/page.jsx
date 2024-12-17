@@ -1,9 +1,14 @@
+// 'use client'
 import React from 'react'
-import img from '../../../../public/assets/img2.jpg'
+import img from '../../../../public/assets/aboutMxene1.jpg'
+import img2 from '../../../../public/assets/aboutMxene2.jpg'
+import img3 from '../../../../public/assets/aboutMxene3.jpg'
+import PatentsSection from '@/app/components/PatentsSection/PatentsSection'
 
 function page() {
   return (
     <>
+    <div style={{paddingTop:"3rem"}}></div>
     <div className='corebg'>
       <div className='container pt-12'>
         <div className='row'>
@@ -18,23 +23,23 @@ function page() {
  </p>
             {/* </ul> */}
           </div>
-          <div className='column col-lg-7 py-4 pt-12'>
-            <img
-              src={img.src}
+          <div className='column col-lg-7 py-4 pt-12' style={{display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center'}}>
+           <center> <img
+              src={img3.src}
               alt="Molecular structure"
               style={{borderRadius:'10px'}}
-            />
+            /></center>
           </div>
         </div>
       </div>
       <div className='container pt-12'>
         <div className='row'>
         <div className='column col-lg-7 py-4 pt-12'>
-            <img
-              src={img.src}
+        <center> <img
+              src={img2.src}
               alt="Molecular structure"
               style={{borderRadius:'10px'}}
-            />
+            /></center>
           </div>
           <div className='column col-lg-5 my-auto'>
           
@@ -46,7 +51,7 @@ function page() {
         </div>
       </div>
 
-      </div>
+      
       <div className='container pt-12'>
         <div className='row'>
           
@@ -58,14 +63,17 @@ function page() {
             {/* </ul> */}
           </div>
           <div className='column col-lg-7 py-4 pt-12'>
-            <img
+          <center> <img
               src={img.src}
               alt="Molecular structure"
               style={{borderRadius:'10px'}}
-            />
+            /></center>
           </div>
         </div>
       </div>
+      <PatentsSection />
+      </div>
+      
     </>
   )
 }
