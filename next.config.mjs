@@ -4,6 +4,10 @@ const nextConfig = {
     basePath: '/mxene',
     trailingSlash: true,
     
+    
 };
 
+
+
 export default nextConfig;
+

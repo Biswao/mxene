@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react';
 import logo from '../../../../public/assets/MXeneLogoPng.png'
+import Link from 'next/link';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,34 +43,34 @@ const Navbar = () => {
           } w-full md:w-auto`}
         >
           <div className="flex flex-col md:flex-row md:space-x-6 text-center">
-            <a
-              href="#"
+            <Link
+            href="/"
               className="hover:text-gray-300 md:px-4 py-2"
               style={{ textDecoration: "none", color: "white" }}
             >
               Home
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+            href="/pages/AboutUs"
               className="hover:text-gray-300 md:px-4 py-2"
               style={{ textDecoration: "none", color: "white" }}
             >
               About
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/pages/ContactUs"
               className="hover:text-gray-300 md:px-4 py-2"
               style={{ textDecoration: "none", color: "white" }}
             >
-              Services
-            </a>
-            <a
+              Contact Us
+            </Link>
+            {/* <a
               href="#"
               className="hover:text-gray-300 md:px-4 py-2"
               style={{ textDecoration: "none", color: "white" }}
             >
               Contact
-            </a>
+            </a> */}
           </div>
 
           {/* Social Icons */}
