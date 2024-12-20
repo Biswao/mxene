@@ -1,7 +1,9 @@
+import Link from 'next/link';
 import img1 from '../../../../public/assets/adv1.png'
 import img2 from '../../../../public/assets/adv12.png'
 import img3 from '../../../../public/assets/adv13.png'
 import img4 from '../../../../public/assets/adv14.png'
+import MyButton from '../MyButton/MyButton';
 
 const AdvantageCard = ({ title, description,image }) => (
     <div className="bg-gray-100 p-6 rounded-lg shadow-md">
@@ -33,6 +35,10 @@ const AdvantageCard = ({ title, description,image }) => (
             <AdvantageCard key={index} title={adv.title} description={adv.description} image={adv.image} />
           ))}
         </div>
+        {/* <center><Link href='/pages/ContactUs'> <button className="bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-600 mt-4">
+        Get in Touch
+            </button></Link></center> */}
+            <center><Link href='/pages/ContactUs'> <MyButton name='Get in Touch' /></Link></center>
       </div>
     );
   };

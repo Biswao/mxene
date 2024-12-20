@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-800 text-white p-4" style={{position:'fixed',width:'100%',zIndex:'100',paddingBottom:'10px !important',paddingTop:'10px !important'}}>
+    <av className="bg-gray-800 text-white p-4" style={{position:'fixed',width:'100%',zIndex:'100',paddingBottom:'10px !important',paddingTop:'10px !important'}}>
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo or Brand */}
         {/* <div className="text-xl font-bold">Brand</div> */}
@@ -55,8 +55,9 @@ const Navbar = () => {
               className="hover:text-gray-300 md:px-4 py-2"
               style={{ textDecoration: "none", color: "white" }}
             >
-              About
+              About Us
             </Link>
+            
             <Link
               href="/pages/ContactUs"
               className="hover:text-gray-300 md:px-4 py-2"
@@ -108,7 +109,7 @@ const Navbar = () => {
           </div> */}
         </div>
       </div>
-    </nav>
+    </av>
   );
 };
 

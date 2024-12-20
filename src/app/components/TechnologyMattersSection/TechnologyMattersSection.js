@@ -1,6 +1,7 @@
 import imga from "../../../../public/assets/circuit.png";
 import imgb from "../../../../public/assets/airplane.png";
 import imgc from "../../../../public/assets/blood-pressure-meter.png";
+import Link from "next/link";
 
 const TechnologyMattersSection = () => {
   const researchAreas = [
@@ -61,6 +62,9 @@ const TechnologyMattersSection = () => {
           </div>
         ))}
       </div>
+      <center><Link href='/pages/ContactUs'> <button className="bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-600 mt-4">
+      Learn About Our Research
+            </button></Link></center>
     </div>
   );
 };

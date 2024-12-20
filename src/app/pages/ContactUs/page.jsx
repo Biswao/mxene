@@ -1,16 +1,22 @@
+// 'use client'
 import React from "react";
 
 function ContactPage() {
+  const handleSubmit = () =>{
+console.log("You tried to submit the form.")
+  }
+  
   return (
+    <>
     <div>
       {/* Contact Us Section */}
-      <section className="contact-section" style={{ backgroundColor: "#f9f9f9" }}>
+      <section className="contact-section" style={{ backgroundColor: "#f0eded" }}>
         <div className="container text-center" style={{paddingTop:"80px" , paddingBottom:'60px'}}>
           <h2 className="contact-title mb-4" style={{ fontWeight: "700", fontSize: "2.5rem" }}>
             Contact Us
           </h2>
           <p className="contact-description mb-5" style={{ fontSize: "1.1rem", lineHeight: "1.6" }}>
-            Have questions about our services, submissions, or payment procedure? 
+            Have questions about our services, submissions, or payment procedure? <br />
             We’d love to hear from you! Reach out via email or leave a message below. 
             Our team is here to assist you.
           </p>
@@ -23,9 +29,9 @@ function ContactPage() {
                 <h5 className="mb-3" style={{ fontWeight: "600" }}>Get in Touch</h5>
                 <p>
                   <i className="fa fa-telegram me-2" style={{ color: "#0088cc" }}></i>
-                  Telegram: <strong>+91-904-000-5445</strong>
+                  Telegram: <br /><strong>+91-904-000-5445</strong>
                 </p>
-                <p>
+                <p><br />
                   <i className="fa fa-whatsapp me-2" style={{ color: "#25D366" }}></i>
                   WhatsApp: 
                   <br /> <strong>+1 (646)916-3476 (USA)</strong>
@@ -34,7 +40,7 @@ function ContactPage() {
                 </p>
                 <p>
                   <i className="fa fa-envelope me-2" style={{ color: "#ea4335" }}></i>
-                  Email: <strong>support@manuscriptedit.com</strong>
+                  Email: <strong>support@mxenetech.com</strong>
                 </p>
               </div>
             </div>
@@ -43,7 +49,7 @@ function ContactPage() {
             <div className="col-lg-5 col-md-6">
               <div className="form-container p-4 bg-white rounded shadow-sm">
                 <h5 className="text-center mb-4" style={{ fontWeight: "600" }}>
-                  Get a Response Within 24 Hours
+                  Fill in the below details:
                 </h5>
                 <form>
                   <div className="form-group mb-3">
@@ -54,14 +60,14 @@ function ContactPage() {
                       style={{ borderRadius: "8px" }}
                     />
                   </div>
-                  <div className="form-group mb-3">
+                  {/* <div className="form-group mb-3">
                     <select className="form-control" style={{ borderRadius: "8px" }}>
                       <option>Select Service</option>
                       <option>Editing</option>
                       <option>Proofreading</option>
                       <option>Formatting</option>
                     </select>
-                  </div>
+                  </div> */}
                   <div className="form-group mb-3">
                     <input
                       type="text"
@@ -89,7 +95,8 @@ function ContactPage() {
                   <button
                     type="submit"
                     className="btn btn-primary w-100"
-                    style={{ borderRadius: "8px", fontWeight: "600" }}
+                    style={{ borderRadius: "8px", fontWeight: "600",backgroundColor:'#282928' }}
+                    // onClick={()=> handleSubmit()}
                   >
                     Send Message
                   </button>
@@ -100,6 +107,7 @@ function ContactPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }
 

@@ -4,16 +4,17 @@ const WhyChooseUsSection = () => {
   return (
     <>
       <div className='corebg'>
-        <div className='container'>
+        <div className='container py-2'>
           <div className='row'>
             <div className='column col-lg-7'>
               <video autoPlay muted loop id="myVideo" style={{ width: '100%', height: '100%', objectFit: 'cover', 
                 backgroundColor: 'rgba(248, 247, 216, 0.7)' }}>
-                <source src="/mxene/assets/mxtechLogo.mp4" type="video/mp4" />
+                <source src="/assets/mxtechLogo.mp4" type="video/mp4" />
               </video>
             </div>
             <div className='column col-lg-5 my-auto'>
-              <h2 className="font-bold mt-4">Our Values</h2><br />
+              {/* <h2 className="font-bold mt-4">Our Values</h2><br /> */}
+              <h3 className="text-3xl font-bold mb-8" style={{color:'white'}}>Our Values</h3>
               {/* <h4 className="font-bold">Innovation:</h4> */}
               <p className="mt-4">
                 

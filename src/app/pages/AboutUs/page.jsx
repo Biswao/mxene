@@ -4,6 +4,7 @@ import img from '../../../../public/assets/aboutMxene1.jpg'
 import img2 from '../../../../public/assets/aboutMxene2.jpg'
 import img3 from '../../../../public/assets/aboutMxene3.jpg'
 import PatentsSection from '@/app/components/PatentsSection/PatentsSection'
+import WhyChooseUsSection from '@/app/components/WhyChooseUsSection/WhyChooseUsSection'
 
 function page() {
   return (
@@ -71,6 +72,7 @@ function page() {
           </div>
         </div>
       </div>
+      <WhyChooseUsSection />
       <PatentsSection />
       </div>
       
