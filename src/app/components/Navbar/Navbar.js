@@ -65,6 +65,14 @@ const Navbar = () => {
             >
               Contact Us
             </Link>
+
+            <Link
+              href="/pages/EMIShielding"
+              className="hover:text-gray-300 md:px-4 py-2"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              EMI Shielding
+            </Link>
             {/* <a
               href="#"
               className="hover:text-gray-300 md:px-4 py-2"
