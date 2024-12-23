@@ -58,29 +58,34 @@ const Navbar = () => {
               About Us
             </Link>
             
-            <Link
-              href="/pages/ContactUs"
-              className="hover:text-gray-300 md:px-4 py-2"
-              style={{ textDecoration: "none", color: "white" }}
-            >
-              Contact Us
-            </Link>
-<<<<<<< HEAD
+          
             <Link
               href="/pages/BatteryTechnology"
               className="hover:text-gray-300 md:px-4 py-2"
               style={{ textDecoration: "none", color: "white" }}
             >
               Battery Technology
-=======
-
+            </Link>
             <Link
               href="/pages/EMIShielding"
               className="hover:text-gray-300 md:px-4 py-2"
               style={{ textDecoration: "none", color: "white" }}
             >
               EMI Shielding
->>>>>>> 109acb3159bb4a870ebae14f76aa28d1f66a2d1e
+            </Link>
+            <Link
+              href="/pages/WaterDesalination"
+              className="hover:text-gray-300 md:px-4 py-2"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              Water Desalination
+            </Link>
+            <Link
+              href="/pages/ContactUs"
+              className="hover:text-gray-300 md:px-4 py-2"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              Contact Us
             </Link>
             {/* <a
               href="#"

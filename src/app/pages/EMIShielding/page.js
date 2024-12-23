@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import "./EMI.css";
+import MyButton from "@/app/components/MyButton/MyButton";
+import Link from "next/link";
 
 const EMIShieldingPage = () => {
   return (
@@ -76,8 +78,9 @@ const EMIShieldingPage = () => {
           medical technology, we welcome your ideas and collaboration.
         </p>
         <div className="emi-buttons">
-          <button className="btn btn-primary">Let’s Collaborate</button>
-          <button className="btn btn-secondary">Contact Us</button>
+         
+         <Link href='/pages/ContactUs'> <MyButton name='Contact Us' /></Link>
+         
         </div>
       </section>
     </div>
