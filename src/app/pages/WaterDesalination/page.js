@@ -1,7 +1,7 @@
 import MyButton from '@/app/components/MyButton/MyButton'
 import Link from 'next/link'
 import React from 'react'
-import mxeneImg2 from '../../../../public/assets/waterd.png'
+import mxeneImg2 from '../../../../public/assets/waterd.jpg'
 import './waterDesali.css'
 
 function page() {
@@ -10,7 +10,7 @@ function page() {
       <div className='sody'>
   <div className="wave"> </div>
   <div className="wave"> </div>
-  <div className="wave"> </div>
+  <div className="wave"> </div> 
 
   <div className='container pt-12' style={{marginTop:'4rem'}}>
     <div className='row'>
