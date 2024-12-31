@@ -1,9 +1,16 @@
-// 'use client'
-import React from "react";
+'use client'
+import React, { useState } from "react";
 
 function ContactPage() {
+
+  const [name,setName] = useState('');
+  const [phone,setPhone] = useState('');
+  const [mail,setMail] = useState('');
+  const [msg,setMsg] = useState('');
+
   const handleSubmit = () =>{
-console.log("You tried to submit the form.")
+    e.preventDefault()
+console.log(name,phone,mail)
   }
   
   return (
@@ -55,48 +62,49 @@ console.log("You tried to submit the form.")
                   <div className="form-group mb-3">
                     <input
                       type="text"
+                      value= {name}
                       className="form-control"
                       placeholder="Your Full Name"
                       style={{ borderRadius: "8px" }}
+                      onChange={(e)=>setName(e.target.value)}
                     />
                   </div>
-                  {/* <div className="form-group mb-3">
-                    <select className="form-control" style={{ borderRadius: "8px" }}>
-                      <option>Select Service</option>
-                      <option>Editing</option>
-                      <option>Proofreading</option>
-                      <option>Formatting</option>
-                    </select>
-                  </div> */}
+                 
                   <div className="form-group mb-3">
                     <input
-                      type="text"
+                      type='text'
+                      value={phone}
                       className="form-control"
                       placeholder="Phone Number"
                       style={{ borderRadius: "8px" }}
+                      onChange={(e)=>setPhone(e.target.value)}
                     />
                   </div>
                   <div className="form-group mb-3">
                     <input
                       type="email"
+                      value={mail}
                       className="form-control"
                       placeholder="Your Email"
                       style={{ borderRadius: "8px" }}
+                      onChange={(e)=>setMail(e.target.value)}
                     />
                   </div>
                   <div className="form-group mb-4">
                     <textarea
                       className="form-control"
+                      value={msg}
                       placeholder="Your Message"
                       rows="4"
                       style={{ borderRadius: "8px" }}
+                      onChange={(e)=>setMsg(e.target.value)}
                     ></textarea>
                   </div>
                   <button
                     type="submit"
                     className="btn btn-primary w-100"
                     style={{ borderRadius: "8px", fontWeight: "600",backgroundColor:'#282928' }}
-                    // onClick={()=> handleSubmit()}
+                    onClick={()=> handleSubmit()}
                   >
                     Send Message
                   </button>

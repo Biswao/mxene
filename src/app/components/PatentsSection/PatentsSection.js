@@ -1,5 +1,4 @@
 import MyButton from "../MyButton/MyButton.js";
-import img from "../../../../public/assets/cloudBattery.gif"
 import Link from "next/link.js";
 
 const PatentsSection = () => {
@@ -7,13 +6,12 @@ const PatentsSection = () => {
       <div className="bg-gray-50 py-12 px-6">
         <h3 className="text-center text-3xl font-bold mb-8" style={{color:'#1f2937'}}>Collaborate with Us</h3>
         <div className="container-fluid flex flex-col md:flex-row items-center">
-          <div className="col-lg-6 col-md-6 col-sm-12">
+          <div className="col-lg-5 col-md-5 col-sm-12">
             <div>
-              <img 
-              src={img.src}
-              style={{width:'30%'}}
-               className="mx-auto d-block"
-              />
+              <center><video autoPlay muted loop id="myVideo" style={{ width: '30%', height: '100%', objectFit: 'cover',
+                background:'white',boxShadow:'none',border:'none !important',padding:'1rem'}}>
+                <source src="/assets/cloudBattery.mp4" type="video/mp4" />
+              </video></center>
             </div>
           </div>
           <div className="col-lg-5 col-md-6  col-sm-12" style={{color:'#1f2937'}}>
