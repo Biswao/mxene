@@ -17,11 +17,17 @@ const EMIShieldingPage = () => {
       <div className="emi-page" style={{ paddingTop: "60px" }}>
         <section className="emi-introduction">
           <div className="container-fluid">
-            <h1 style={{ color: "#021E39", marginBottom: "30px",fontWeight:"bold"}}>
-              Exploring Next-Generation EMI Shielding Solutions
-            </h1>
             <div className="row">
               <div className="col-lg-8">
+                <h2
+                  style={{
+                    color: "#021E39",
+                    marginBottom: "30px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Exploring Next-Generation EMI Shielding Solutions
+                </h2>
                 <p style={{ color: "#021E39", fontSize: "1.0rem" }}>
                   At MXeneTech by Reseapro Labs, we are studying how MXenes and
                   other 2D materials could improve Electromagnetic Interference
@@ -40,11 +46,14 @@ const EMIShieldingPage = () => {
                 </p>
               </div>
 
-              <div className="col-lg-4">
+              <div className="col-lg-4" style={{display:"flex" , justifyContent:'center' , alignItems:'center'}}>
                 <img
                   src="/assets/Emi shielding.jpg"
                   alt=""
-                  style={{ borderRadius: "5px", boxShadow:'-5px 5px 10px black ' }}
+                  style={{
+                    borderRadius: "5px",
+                    boxShadow: "-5px 5px 10px black ",
+                  }}
                 />
               </div>
             </div>
@@ -53,12 +62,15 @@ const EMIShieldingPage = () => {
 
         <section className="mb-5">
           <div className="container">
-            <h2 className="text-center mb-4" style={{ color: "#021E39",}}>
+            <h2 className="text-center mb-4" style={{ color: "#021E39" }}>
               <strong>Research Areas</strong>
             </h2>
             <div className="row g-4">
               <div className="col-md-4">
-                <div className="card h-100 shadow border-0" style={{opacity:'0.8', boxShadow:'-5px 5px 10px black '}}>
+                <div
+                  className="card h-100 shadow border-0"
+                  style={{ opacity: "0.8", boxShadow: "-5px 5px 10px black " }}
+                >
                   <div className="card-body">
                     <div className="d-flex align-items-center mb-3">
                       <img
@@ -67,23 +79,29 @@ const EMIShieldingPage = () => {
                         className="me-3"
                         style={{ width: "40px", height: "40px" }}
                       />
-                      <h3 className="card-title m-0"> <strong>Electronics Protection </strong></h3>
+                      <h3 className="card-title m-0">
+                        {" "}
+                        <strong>Electronics Protection </strong>
+                      </h3>
                     </div>
                     <ul className="list-unstyled">
                       <li>
-                        <strong>Consumer Electronics:</strong><br/> Smartphones,
-                        tablets, and computers
+                        <strong>Consumer Electronics:</strong>
+                        <br /> Smartphones, tablets, and computers
                       </li>
                       <li>
-                        <strong>Industrial Equipment:</strong><br/> Machinery
-                        sensitive to interference
+                        <strong>Industrial Equipment:</strong>
+                        <br /> Machinery sensitive to interference
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
               <div className="col-md-4">
-                <div className="card h-100 shadow border-0" style={{opacity:'0.8', boxShadow:'-5px 5px 10px black '}}>
+                <div
+                  className="card h-100 shadow border-0"
+                  style={{ opacity: "0.8", boxShadow: "-5px 5px 10px black " }}
+                >
                   <div className="card-body">
                     <div className="d-flex align-items-center mb-3">
                       <img
@@ -92,23 +110,29 @@ const EMIShieldingPage = () => {
                         className="me-3"
                         style={{ width: "40px", height: "40px" }}
                       />
-                      <h3 className="card-title m-0"> <strong>Defense and Aerospace </strong></h3>
+                      <h3 className="card-title m-0">
+                        {" "}
+                        <strong>Defense and Aerospace </strong>
+                      </h3>
                     </div>
                     <ul className="list-unstyled">
                       <li>
-                        <strong>Military Communications:</strong><br/> Secure
-                        channels
+                        <strong>Military Communications:</strong>
+                        <br /> Secure channels
                       </li>
                       <li>
-                        <strong>Aerospace Systems:</strong><br/> Lightweight
-                        shielding for aircraft
+                        <strong>Aerospace Systems:</strong>
+                        <br /> Lightweight shielding for aircraft
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
               <div className="col-md-4">
-                <div className="card h-100 shadow border-0" style={{opacity:'0.8', boxShadow:'-5px 5px 10px black '}}>
+                <div
+                  className="card h-100 shadow border-0"
+                  style={{ opacity: "0.8", boxShadow: "-5px 5px 10px black " }}
+                >
                   <div className="card-body">
                     <div className="d-flex align-items-center mb-3">
                       <img
@@ -117,16 +141,19 @@ const EMIShieldingPage = () => {
                         className="me-3"
                         style={{ width: "40px", height: "40px" }}
                       />
-                      <h3 className="card-title m-0"> <strong>Medical Devices </strong></h3>
+                      <h3 className="card-title m-0">
+                        {" "}
+                        <strong>Medical Devices </strong>
+                      </h3>
                     </div>
                     <ul className="list-unstyled">
                       <li>
-                        <strong>Diagnostic Equipment:</strong><br/> Ensuring accurate
-                        imaging
+                        <strong>Diagnostic Equipment:</strong>
+                        <br /> Ensuring accurate imaging
                       </li>
                       <li>
-                        <strong>Implantable Devices:</strong><br/> Safe from
-                        interference
+                        <strong>Implantable Devices:</strong>
+                        <br /> Safe from interference
                       </li>
                     </ul>
                   </div>
@@ -136,12 +163,23 @@ const EMIShieldingPage = () => {
           </div>
         </section>
 
-        <section className="emi-benefits" style={{opacity:'0.8'}}>
+        <section className="emi-benefits" style={{ opacity: "0.8" }}>
           <div className="container">
-            <div className="row" style={{display:'flex',alignItems:'center'}}>
+            <div
+              className="row"
+              style={{ display: "flex", alignItems: "center" }}
+            >
               <div className="col-lg-7">
-                <h2><strong>Benefits We Are Exploring</strong></h2>
-                <ul style={{lineHeight:'50px' , listStyleType:'auto' , paddingLeft:'10px'}}>
+                <h2>
+                  <strong>Benefits We Are Exploring</strong>
+                </h2>
+                <ul
+                  style={{
+                    lineHeight: "50px",
+                    listStyleType: "auto",
+                    paddingLeft: "10px",
+                  }}
+                >
                   <li>
                     Lightweight Materials: Reducing weight while maintaining
                     performance.
@@ -158,7 +196,14 @@ const EMIShieldingPage = () => {
               </div>
 
               <div className="col-lg-5">
-                <img src="/assets/Effective.jpg" alt="#" style={{borderRadius:'8px',boxShadow:'-5px 5px 10px black '}} />
+                <img
+                  src="/assets/Effective.jpg"
+                  alt="#"
+                  style={{
+                    borderRadius: "8px",
+                    boxShadow: "-5px 5px 10px black ",
+                  }}
+                />
               </div>
             </div>
           </div>

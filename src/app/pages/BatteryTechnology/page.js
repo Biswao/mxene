@@ -20,10 +20,12 @@ function page() {
         <div className='container pt-12' style={{ marginTop: '6rem' }}>
           <div className='row'>
 
-            <div className='column col-lg-5 my-auto' style={{ color: '#021E39', }}>
-              <h1 className="font-bold">Battery Technology</h1>
-              <h6 className="font-bold pt-4">  Investigating Next-Generation Battery Possibilities.</h6>
-              <h4 className="font-bold pt-4">Investigating Next-Generation Battery Possibilities.</h4>
+            <div className='column col-lg-5 my-auto' style={{ color: '#021E39',paddingLeft:"60px" }}>
+              <h2 className="font-bold">Battery Technology</h2>
+              <h6 className="font-bold pt-2">  Investigating Next-Generation Battery Possibilities.</h6>
+              <h4 className="font-bold pt-4">Our Battery Research Areas</h4>
+              <h6 className="font-bold pt-2">We are exploring how 2D materials like MXenes might influence the future of
+              battery technology:</h6>
 
               {/* </ul> */}
             </div>
