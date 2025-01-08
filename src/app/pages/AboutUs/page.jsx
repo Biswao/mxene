@@ -10,7 +10,7 @@ function page() {
   return (
     <>
     <div style={{paddingTop:"3rem"}}></div>
-    <div className='corebg'>
+    {/* <div className='corebg'> */}
       <div className='container pt-12'>
         <div className='row'>
           
@@ -57,8 +57,6 @@ function page() {
         <div className='row'>
           
           <div className='column col-lg-5 my-auto'>
-          {/* <h3 className="font-bold pt-4">About Us</h3>
-          <h6 className="font-bold pt-4">  Exploring the Boundless Potential of 2D Materials.</h6> */}
           <h4 className="font-bold pt-4">Our Vision</h4>
           <p>We envision a future where advanced materials open new possibilities for industries. Our goal is to contribute knowledge and insights that help pave the way for sustainable, efficient, and innovative technologies.</p>
             {/* </ul> */}
@@ -72,9 +70,10 @@ function page() {
           </div>
         </div>
       </div>
-      <WhyChooseUsSection />
       <PatentsSection />
-      </div>
+      <WhyChooseUsSection />
+     
+      {/* </div> */}
       
     </>
   )

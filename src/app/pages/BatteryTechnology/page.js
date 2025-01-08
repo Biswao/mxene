@@ -20,7 +20,7 @@ function page() {
         <div className='container pt-12' style={{ marginTop: '6rem' }}>
           <div className='row'>
 
-            <div className='column col-lg-5 my-auto' style={{ color: 'white', textShadow: '-2px 2px 4px black' }}>
+            <div className='column col-lg-5 my-auto' style={{ color: '#021E39', }}>
               <h1 className="font-bold">Battery Technology</h1>
               <h6 className="font-bold pt-4">  Investigating Next-Generation Battery Possibilities.</h6>
               <h4 className="font-bold pt-4">Investigating Next-Generation Battery Possibilities.</h4>
@@ -39,7 +39,7 @@ function page() {
 
         <section className="section d-flex" style={{display:'flex',alignItems:'center'}} id="lithium-metal">
           <div className="col-lg-8">
-            <h2 style={{ textShadow: '-2px 2px 4px black' }}><strong>Lithium-Metal Batteries</strong></h2>
+            <h2><strong>Lithium-Metal Batteries</strong></h2>
             <ul>
               <li><strong>Energy Density:</strong> Researching ways to store more energy in smaller, lighter batteries.</li>
               <li><strong>Charging Speed:</strong> Investigating faster-charging possibilities.</li>
@@ -56,7 +56,7 @@ function page() {
           <img src={batteryImg3.src} alt="Lithium-metal Batteries" style={{borderRadius:'10px',boxShadow:'3px 3px 5px black'}} />
           </div>
           <div className="col-lg-8">
-            <h2 style={{ textShadow: '-2px 2px 4px black' }}><strong>Solid-State Batteries</strong></h2>
+            <h2><strong>Solid-State Batteries</strong></h2>
             <ul>
               <li><strong>Efficiency:</strong> Studying improvements in ionic conductivity.</li>
               <li><strong>Safety:</strong> Considering safer alternatives to liquid electrolytes.</li>
@@ -67,7 +67,7 @@ function page() {
 
         <section className="section d-flex" style={{display:'flex',alignItems:'center'}} id="grid-storage">
           <div className="col-lg-8">
-            <h2 style={{ textShadow: '-2px 2px 4px black' }}><strong>Grid Storage</strong></h2>
+            <h2><strong>Grid Storage</strong></h2>
             <ul>
               <li><strong>Scalability:</strong> Examining large-scale solutions for renewable energy.</li>
               <li><strong>Reliability:</strong> Exploring consistent, long-duration energy storage.</li>
@@ -83,7 +83,7 @@ function page() {
           <img src={batteryImg5.src} alt="Lithium-metal Batteries" style={{borderRadius:'10px',boxShadow:'3px 3px 5px black'}} />
           </div>
           <div className="col-lg-8">
-            <h2 style={{ textShadow: '-2px 2px 4px black' }}><strong>Consumer Electronics</strong></h2>
+            <h2><strong>Consumer Electronics</strong></h2>
             <ul>
               <li><strong>Battery Life:</strong> Investigating potential ways to extend the life of portable devices.</li>
               <li><strong>Compact Design:</strong> Exploring efficient storage for smaller devices.</li>

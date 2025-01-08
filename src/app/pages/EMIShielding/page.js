@@ -17,12 +17,12 @@ const EMIShieldingPage = () => {
       <div className="emi-page" style={{ paddingTop: "60px" }}>
         <section className="emi-introduction">
           <div className="container-fluid">
-            <h1 style={{ color: "white", marginBottom: "30px",textShadow:'-2px 2px 4px black' }}>
+            <h1 style={{ color: "#021E39", marginBottom: "30px",fontWeight:"bold"}}>
               Exploring Next-Generation EMI Shielding Solutions
             </h1>
             <div className="row">
               <div className="col-lg-8">
-                <p style={{ color: "white", fontSize: "1.0rem" }}>
+                <p style={{ color: "#021E39", fontSize: "1.0rem" }}>
                   At MXeneTech by Reseapro Labs, we are studying how MXenes and
                   other 2D materials could improve Electromagnetic Interference
                   (EMI) shielding. Effective EMI shielding is essential for
@@ -30,7 +30,7 @@ const EMIShieldingPage = () => {
                   devices, and communication networks from unwanted
                   electromagnetic signals.
                 </p>
-                <p style={{ color: "white", fontSize: "1.0rem" }}>
+                <p style={{ color: "#021E39", fontSize: "1.0rem" }}>
                   Our research is focused on understanding the properties of
                   MXenes and evaluating how these materials could be used to
                   create lightweight, efficient, and flexible shielding
@@ -53,7 +53,7 @@ const EMIShieldingPage = () => {
 
         <section className="mb-5">
           <div className="container">
-            <h2 className="text-center mb-4" style={{ color: "white",textShadow:'-2px 2px 4px black' }}>
+            <h2 className="text-center mb-4" style={{ color: "#021E39",}}>
               <strong>Research Areas</strong>
             </h2>
             <div className="row g-4">

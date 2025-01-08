@@ -1,4 +1,5 @@
 import './WhyChooseUsSection.css'
+import logoPng from '../../../../public/assets/MXeneLogoPng.png'
 
 const WhyChooseUsSection = () => {
   return (
@@ -9,8 +10,12 @@ const WhyChooseUsSection = () => {
             <div className='column col-lg-7'>
               <video autoPlay muted loop id="myVideo" style={{ width: '100%', height: '100%', objectFit: 'cover', 
                 backgroundColor: 'rgba(248, 247, 216, 0.7)' }}>
-                <source src="/assets/mxtechLogo.mp4" type="video/mp4" />
+                <source src="/assets/Mxenevideo1.mp4" type="video/mp4" />
               </video>
+              <div style={{position:'absolute',top:'0'}}>
+                  <center><img src={logoPng.src} style={{marginBottom:'2rem'}} alt="MxeneTech Logo"/></center>
+              </div>
+
             </div>
             <div className='column col-lg-5 my-auto'>
               {/* <h2 className="font-bold mt-4">Our Values</h2><br /> */}

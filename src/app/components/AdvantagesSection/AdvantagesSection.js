@@ -24,12 +24,18 @@ const AdvantageCard = ({ title, description,image }) => (
     return (
       <div className="container py-12">
         <h3 className="text-center text-3xl font-bold mb-8">Key Research Areas</h3>
-       <center> <p className='mb-5'>Our research is focused on exploring how these materials might solve real-world challenges. 
+        <p style={{ fontSize: '2rem',textAlign:'center',marginBottom:'0px' }} >Unlocking the Potential of 2D Materials. </p><br />
+    <p style={{ fontSize: '1.5rem',textAlign:'center',marginBottom:'0px'  }}>Exploring Innovations in Energy Storage, EMI Shielding, and 
+      Water Purification. </p><br />
+    <p style={{fontWeight:'normal',textAlign:'center' }} className='mb-5'>At MXeneTech by Reseapro Labs, we are dedicated to discovering the 
+      possibilities within MXenes, MAX Phases, and Graphene—advanced 2D materials that could change the future of energy storage, 
+      EMI shielding, and water purification.
+    Our research is focused on exploring how these materials might solve real-world challenges. 
           While we are in the early stages of investigation, our findings so far are promising. 
           We are committed to working alongside industry partners, researchers, and innovators to uncover applications 
           that could drive progress.
           Join us as we explore new frontiers and pursue answers that may lead to tomorrow’s breakthroughs.
- </p></center>
+ </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
           {advantages.map((adv, index) => (
             <AdvantageCard key={index} title={adv.title} description={adv.description} image={adv.image} />
