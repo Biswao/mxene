@@ -10,12 +10,10 @@ import Link from 'next/link'
 function page() {
   return (
     <>
-
       <div className='sody'>
         <div className="wave">  </div>
         <div className="wave">  </div>
         <div className="wave">  </div>
-
 
         <div className='container pt-12' style={{ marginTop: '6rem' }}>
           <div className='row'>
